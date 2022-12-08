@@ -1,1 +1,8 @@
 /* Your code here */
+.main__list{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20%;
+    font-size: 12px;
+    /* border: 1px solid black; */
+}

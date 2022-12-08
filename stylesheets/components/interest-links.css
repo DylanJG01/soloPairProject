@@ -1,1 +1,90 @@
 /* Your code here */
+
+.flx {
+    display: flex;
+}
+
+.flx-col {
+    flex-direction: column;
+}
+
+.grd13x1 {
+    margin-top: 2%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-areas:
+    "dogimg dogtxt dogtxt catimg cattxt cattxt plugimg plugtxt plugtxt stocktxt stocktxt weatherimg weathertxt"
+    ;
+
+}   
+.grd13x1 > * {
+    font-size: 10px;
+}
+
+.interest-bar__dog__img{
+grid-area: dogimg;
+display: flex;
+justify-content: center;
+    align-items: center;
+}
+.img{
+    height: 80%;
+    width: 80%;
+}
+.interest-bar__dog_text{
+grid-area: dogtxt;
+margin: 2% 5%;
+}
+.interest-bar__cat__img{
+grid-area: catimg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interest-bar__cat__text{
+grid-area: cattxt;
+margin: 2% 5%;
+}
+
+.interest-bar__img{
+grid-area: plugimg;    
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interest-bar__text{
+grid-area: plugtxt;
+margin: 2% 5%;
+}
+
+.interests-bar__stock{
+    grid-area: stocktxt;
+
+}
+.interest-bar__stock__ *{  
+    display: inline-flex;
+    margin: 2.5% 10%;
+}
+
+.interests-bar__weather__img{
+grid-area: weatherimg;
+display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.interests-bar__weather__text{
+grid-area: weathertxt;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.bld {
+    font-weight: bold;
+}
+
+.profitpercentage {
+    color: green;
+}

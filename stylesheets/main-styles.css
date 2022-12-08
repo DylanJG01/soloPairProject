@@ -1,6 +1,7 @@
 @import url("reset.css");
 @import url("global.css");
 
+@import url("https://use.fontawesome.com/releases/v5.0.12/css/all.css");
 @import url("components/gear-dropdown.css");
 @import url("components/interest-links.css");
 @import url("components/main-content.css");

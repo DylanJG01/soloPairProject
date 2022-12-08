@@ -1,1 +1,102 @@
 /* Your code here */
+.masthead {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+        "menu-and-search technologies actions"
+        "date logo paper"
+}
+
+.masthead__menu-and-search {
+    grid-area: menu-and-search;
+    /* background-color: green; */
+    display: flex;
+    gap: 25px;
+    padding: 9px 7px;
+    padding-left: 20px;
+    font-size: 11px;
+    align-items: center;
+    border-bottom: 1px solid #f7f7f5;
+}
+.masthead__clickable:hover{
+    background-color: #f7f7f5;
+}
+
+.masthead__actions {
+    grid-area: actions;
+    /* background-color: red; */
+    border-bottom: 1px solid #f7f7f5;
+}
+
+.masthead__technologies {
+    grid-area: technologies;
+    /* background-color: yellow; */
+    border-bottom: 1px solid #f7f7f5;
+    display:inline-flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+/* .little__tech {
+    font-size: 10px;
+    color: gray;
+    margin: 0 8%;
+} */
+.little__technology{
+
+    width: max-content;
+    
+}
+.little__tech {
+    font-size: 10px;
+    text-transform: uppercase; 
+    /* border: 1px solid black;  */
+    display: inline-flex;
+    margin: 0 20px;
+}
+
+.masthead__date {
+    grid-area: date;
+    /* background-color: purple; */
+    border-bottom: 1px solid #f7f7f5;
+}
+
+.masthead__logo {
+    grid-area: logo;
+    /* background-color: orange; */
+    border-bottom: 1px solid #f7f7f5;
+}
+
+.masthead__paper {
+    grid-area: paper;
+    /* background-color: lightblue; */
+    border-bottom: 1px solid #f7f7f5;
+}
+
+.masthead__actions {
+    
+    height:100px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.masthead__date, .masthead__paper {
+    font-size: 11px;
+    display: flex;
+    align-items: flex-end;
+}
+ .masthead__paper{
+    justify-content: flex-end;
+ }
+
+ .masthead__actions__gear{
+    background-color: none;
+ }
+
+ .fa-newspaper:before {
+     content: "\f1ea";
+     /* padding-bottom: 100px; */
+     display: block;
+     margin-bottom: 2px;
+     margin-right: 2px;
+ }
